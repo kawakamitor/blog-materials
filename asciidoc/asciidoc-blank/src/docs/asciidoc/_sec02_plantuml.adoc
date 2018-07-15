@@ -1,0 +1,32 @@
+== PlantUML
+PlantUMLでの挿図サンプル。
+
+=== シーケンス図
+シーケンス図のサンプル。
+
+[plantuml, diag-sequence-sample]
+----
+@startuml
+ClassA -> ClassB: call
+ClassB -> ClassC: Call
+ClassC --> ClassB: Response
+ClassB --> ClassA: Response
+@enduml
+----
+
+=== アクティビティ図
+アクティビティ図のサンプル。
+
+[plantuml, diag-activity-sample]
+----
+@startuml
+start
+:step1;
+if() then (yes)
+  :step2-A;
+else (no)
+  :step2-B;
+endif
+stop
+@enduml
+----

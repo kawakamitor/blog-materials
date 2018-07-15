@@ -1,0 +1,73 @@
+== 基本的な書き方
+
+=== 画像
+画像挿入の例。
+
+image::asciidoc.jpg[]
+
+=== コードハイライト
+コードハイライト例。
+
+[source,java]
+----
+@RunWith(SpringRunner.class)
+@SpringBootTest(classes = ProviderApplication.class, webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
+public class ContractTestBase {
+
+    @Autowired
+    UserRestController userRestController;
+
+    @Before
+    public void setup() {
+        RestAssuredMockMvc.standaloneSetup(userRestController);
+    }
+
+    @Test
+    public void contextLoads() {
+    }
+}
+----
+
+
+=== ブロッククォート
+文章中のブロッククォートの例。
+
+`@SpringBootTest` を使用してテストコードを作成します。
+
+=== 脚注のバリエーション
+
+[NOTE]
+====
+NOTEレベルの脚注。脚注内の箇条書きやコードハイライトも可能。
+
+* AAA
+
+[source,java]
+----
+@RunWith(SpringRunner.class)
+@SpringBootTest(classes = ProviderApplication.class, webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
+public class ContractTestBase {
+    // 省略
+}
+----
+====
+
+[TIP]
+====
+TIPレベルの脚注。
+====
+
+[IMPORTANT]
+====
+IMPORTANTレベルの脚注。
+====
+
+[CAUTION]
+====
+CAUTIONレベルの脚注。
+====
+
+[WARNING]
+====
+WARNINGレベルの脚注。
+====

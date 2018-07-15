@@ -1,0 +1,23 @@
+= Asciidoc Blank
+:lang: ja
+:doctype: book
+:docname: Asciidoc Blank
+:imagesdir: ./images
+:sectnums:
+:toc: left
+:toclevels: 3
+:icons: font
+:source-highlighter: highlightjs
+:author: Auther
+:email: auther@mail.com
+
+Asciidocでドキュメントを作成する際の雛形&ちょっとしたサンプル。
+
+[NOTE]
+====
+補足説明。
+====
+
+include::_sec01_basic_writing_style.adoc[]
+
+include::_sec02_plantuml.adoc[]
