@@ -1,0 +1,1 @@
+INSERT INTO test_data values ('TEST DATA')
